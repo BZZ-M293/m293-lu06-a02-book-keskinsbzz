@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8">
-    <title>LU06.A02 - Buch</title>
-  </head>
-  <body>
-
-  </body>
+<head>
+<meta charset="UTF-8">
+<title>LU06.A02 - Buch</title>
+</head>
+<body>
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post" novalidate>
+<label for="title">Buchtitel:</label>
+<input type="text" id="title" name="title" minlength="2" maxlength="30" required><br><br>
+<label for="author">Autoren:</label>
+<input type="text" id="author" name="author" minlength="5" maxlength="40" required><br><br>
+<label for="price">Preis:</label>
+<input type="number" id="price" name="price" step="0.01" min="0.05" max="99.95" required><br><br>
+<label for="date">Erscheinungsdatum:</label>
+<input type="text" id="date" name="date" pattern="\d{2}\.\d{2}\.\d{4}" required><br><br>
+<label for="edition">Auflage:</label>
+<input type="number" id="edition" name="edition" min="1" max="9" required><br><br>
+<button type="submit">Absenden</button>
+<button type="reset">Zurücksetzen</button>
+</form>
+</body>
 </html>
+hat Kontextmenü
